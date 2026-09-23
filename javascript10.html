@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="profile()">Click me</button>
+
+    <script language="javascript" type="text/javascript">
+         function profile(){
+     let admin =  {
+     userName : "Rahul",
+     age : 20 
+     };
+     var x= "age should be 18 or more "
+     var y=" user must be admin."
+     var z=((x>y)&&(y<x)) ?  "Access Granted" : "Access Denied";
+     console.log(z);
+     console.log("age"in admin);
+     delete admin.age;
+     console.log("age"in admin);
+
+         };
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="delivery()">Click me</button>
+   <script language="javascript" type="text/javascript">
+    function delivery(){
+    let order = {
+        itemName: "laptop",
+        isDelivered: true,
+        daysSinceDelivery: 6
+    };
+    var x =  "item has been delivered (isDelivered is true)";
+    var y =  " item was delivered within the last 7 days" ;
+    var z = ((x>y)&&(y<x)) ? "Eligible for Return": "Return Period Expired";
+     console.log(z); 
+    delete order.daysSinceDelivery;
+    }
+   </script> 
+</body>
+</html>
