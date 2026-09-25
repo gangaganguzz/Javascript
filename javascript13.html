@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+     let date= new Date(2023, 7, 9);
+     let today = new Date();
+     let year = date.getFullYear();
+     let month = date.toLocaleString("en-US", { month: "long" });
+     let d = date.getDate();
+     let years = today.getFullYear() - year;
+     
+   console.log("Year:", year); 
+   console.log("Month:", month);
+   console.log("Day:", d);
+   console.log("Full years passed:", years);
+   if (years > 1) {
+         console.log("It has been more than a year since that date."); } 
+     else { 
+        console.log("It has been less than a year since that date."); }
+    </script>
+</body>
+</html>
