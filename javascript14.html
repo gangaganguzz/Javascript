@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        let friend= {
+            name: "Ganga",
+            birthDate:"2005/06/09"
+        };
+        function getBirthdayDetails(friend){
+          let date = new Date(friend.birthDate);
+          let today = new Date(); 
+          let year = date.getFullYear(); 
+          let month = date.toLocaleString("en-US", { month: "long" });
+          let day = date.getDate(); 
+          let age = today.getFullYear() - year; 
+          console.log(friend.name + " was born on " + day + " " + month + ", " + year + " and is " + age + " years old."); 
+        } 
+            
+          getBirthdayDetails(friend);  
+        
+
+    </script>
+</body>
+</html>
