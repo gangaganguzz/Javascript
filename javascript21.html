@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+     class Book {
+        constructor(booktitle,author,price){
+            this.booktitle=booktitle;
+            this.author=author;
+            this.price=price;
+            console.log(this.booktitle+" "+this.author+" "+this.price);
+        }
+            getbooktitle(){
+            return this.booktitle;
+            }
+            getauthor (){
+            return this.author;
+        }
+            getprice (){
+            return this.price;
+            }
+
+            setprice (newprice){
+            if(typeof newprice==="number" && newprice>0){
+            this.price=newprice;
+           };
+        }
+           
+     }
+
+    book1= new Book("Give", "Erica C. Witsel",964.43);
+     book1.setprice(1000);
+     console.log(book1.booktitle+" " + book1.author+ " "+book1.price);
+    </script>
+</body>
+</html>
