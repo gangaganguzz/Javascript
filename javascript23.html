@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form1" onsubmit="return myFunction()" action="">
+    <input type="text" name="fname" id="text1">
+    <input type="submit" value="Submit">
+</form> 
+ <p id="text"></p>
+
+    <script language="javascript" type="text/javascript">
+       var x = document.forms["form1"];
+       var z =document.getElementById("text1");
+      function myFunction(){
+     document.getElementById("text").innerHTML=z.value;
+      document.getElementById("text").style.color = "blue";
+      document.getElementById("text").onmouseover=function(){this.style.color = "green"; }
+       document.getElementById("text").onmouseout = function() { this.style.color = "blue"; }
+        return false;
+      }
+    </script>
+</body>
+</html>
