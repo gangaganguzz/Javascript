@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form id="form1" onsubmit="return myFunction()" action="">
+      username: 
+      <input type="text" name="fname" id="text"><br><br>
+      feedback:
+       <textarea type="text" name="text" id="text1"></textarea><br><br>
+      <input type="submit" value="Submit">
+      </form> 
+       <p id="name"></p>
+       <p id="feedback"></p>
+       <p id="message"></p>
+      <script language="javascript" type="text/javascript">
+         var x = document.forms["form1"];
+        var username=document.getElementById("text");
+         var feedback=document.getElementById("text1");
+        function myFunction(){
+       document.getElementById("name").innerHTML=username.value;
+       document.getElementById("feedback").innerHTML=feedback.value;
+       document.getElementById("message").innerHTML = "Thanks for your feedback!";
+        document.getElementById("message").style.color = "green"; 
+        setTimeout(function() { 
+            document.getElementById("message").innerHTML = ""; 
+        }, 5000);
+       document.getElementById("feedback").onmouseover = function() { this.style.color = "blue"; } 
+       document. getElementById("feedback").onmouseout = function() { this.style.color = "black"; }
+       return false;
+       }
+    </script>
+</body>
+</html>
